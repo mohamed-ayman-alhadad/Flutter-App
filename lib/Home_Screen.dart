@@ -39,7 +39,48 @@ class _HomeScreenState extends State<HomeScreen> {
           , icon: Icon(Icons.remove))
         ],
       ),
-      
+      body: Row(
+        children: [
+          Expanded(
+            child: Container(
+              
+              height: double.infinity,
+              color: Colors.red,
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              height:double.infinity,
+              color: Colors.green,
+              child: Center(child:
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 80,
+                    width: 80,
+                    color: Colors.purple,
+                  ),
+                  Container(
+                    height: 80,
+                    width: 80,
+                    color: Colors.pink,
+                  )
+                ]
+              )
+                 
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              height: double.infinity,
+              color: Colors.yellow,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
